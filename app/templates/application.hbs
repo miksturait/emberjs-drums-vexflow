@@ -1,4 +1,7 @@
 <h1>Drums Project</h1>
+{{#each model as |note| }}
+  {{ note/new-note note=note }}
+{{/each}}
 
-{{ vexflow-notes }}
+{{ vexflow-notes dataNotes=model }}
 
